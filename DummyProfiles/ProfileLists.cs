@@ -9,7 +9,6 @@ namespace DummyProfiles
     public class ProfileLists
     {
         public string email;
-        public string name;
         public string pass;
     }
 
@@ -21,11 +20,9 @@ namespace DummyProfiles
     public class Profiles
     {
         public string proname;
+        public string prosname;
         public int following;
         public int followers;
-    }
-    public class BlockList
-    {
-        public string blist;
+        public int blocked;
     }
 }

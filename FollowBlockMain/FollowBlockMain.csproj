@@ -10,10 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Block\Block.csproj" />
     <ProjectReference Include="..\Display\Display.csproj" />
     <ProjectReference Include="..\DummyProfiles\DummyProfiles.csproj" />
-    <ProjectReference Include="..\Follow\Follow.csproj" />
+    <ProjectReference Include="..\FollowAndBlock\FollowAndBlock.csproj" />
     <ProjectReference Include="..\Suggestion\Suggestion.csproj" />
   </ItemGroup>
 
