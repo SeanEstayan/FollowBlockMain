@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using DummyProfiles;
+
 
 namespace Display
 {
@@ -16,19 +16,6 @@ namespace Display
             return choice;
         }
 
-        public string LogIn() {
 
-            EmailLists eml = new EmailLists();
-
-			Console.WriteLine("Email: ");
-			string mail = Console.ReadLine();
-
-            if (mail.Equals(eml.Profil(Sean.email)) {
-
-                return mail;
-            }
-
-            
-		}
     }
 }

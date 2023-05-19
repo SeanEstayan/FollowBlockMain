@@ -13,6 +13,7 @@ namespace FollowBlockMain
         static void Main(string[] args)
         {
             Fmenu fmenu = new Fmenu();
+            LogIn login = new LogIn();
             do
             {
                 string input;
@@ -21,6 +22,10 @@ namespace FollowBlockMain
                 switch (input) 
                 {
                     case "1":
+                        string acc, pas;
+
+                        acc = login.Email();
+                       
 
 
                         break;
