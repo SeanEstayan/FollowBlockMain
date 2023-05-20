@@ -152,8 +152,9 @@ namespace FollowBlockMain
                                         Console.WriteLine("Search: ");
                                         var search = Console.ReadLine();
                                         var tosearch = prol.Find(x => x.proname == search);
+                                            tosearch = prol.Find(x => x.prosname == search);
 
-                                        Console.WriteLine("Do you wish to follow/block? type F / B");
+                                            Console.WriteLine("Do you wish to follow/block? type F / B");
                                         string fb = Console.ReadLine().ToLower();
 
 

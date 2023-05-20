@@ -24,6 +24,7 @@ namespace Display
             Console.WriteLine($"Name: {pl.proname} {pl.prosname}");
             Console.WriteLine($"Following: {pl.following}");
             Console.WriteLine($"Followers: {pl.followers}");
+            Console.WriteLine($"Blocked: {pl.blocked}");
         }
 
         public string Screen()
