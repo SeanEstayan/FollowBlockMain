@@ -10,12 +10,11 @@ namespace FollowBlockMain
         static int i;
         static void Main(string[] args)
         {
-            //Profiles NewP = new Profiles();
-
             Fmenu fmenu = new Fmenu();
             ProfileLists plist = new ProfileLists();
             LogIn login = new LogIn();
             EmailLists elist = new EmailLists();
+            Profiles seliforp = new Profiles(); 
 
             ProfileLists Sean = new ProfileLists
             {
@@ -33,8 +32,8 @@ namespace FollowBlockMain
             ProfileLists Claris = new ProfileLists {
                 email = "Claris@Follow",
                 pas = "claris123"
-            };
-
+            }; 
+           
             Profiles SeanP = new Profiles {
                 proname = "Sean",
                 prosname = "Estayan",
@@ -58,21 +57,19 @@ namespace FollowBlockMain
                 followers = 0,
                 blocked = 1
             };
-            Profiles = new Profiles
+            Profiles ClarisP = new Profiles
             {
-                proname = "",
-                prosname = "",
+                proname = "Claris",
+                prosname = "Batacandolo",
                 following = 1,
                 followers = 0,
                 blocked = 1
             };
 
-
-
-
-
-
-
+            elist.AddEmail(Sean);
+            elist.AddEmail(Lorrea);
+            elist.AddEmail(Danica);
+            elist.AddEmail(Claris);
 
 
 
@@ -95,11 +92,11 @@ namespace FollowBlockMain
                             {
                             pass = login.Password();
 
-                            if (pass == fol.pas)
+                            if (pass.Equals(Sean.pas))
                             {
                                 do {
 
-                                    fmenu.ShowProfile(elist.Prol.);
+                                    fmenu.ShowProfile(SeanP);
                                     chr = fmenu.Screen();
 
                                     switch (chr)

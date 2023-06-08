@@ -25,4 +25,12 @@ namespace FollowBlockMain
         public int followers;
         public int blocked;
     }
+
+    public class Follow { 
+    public string follow;
+    }
+
+    public class Block {
+        public string block;
+    }
 }

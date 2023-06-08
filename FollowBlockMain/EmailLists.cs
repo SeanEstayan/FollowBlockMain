@@ -15,70 +15,42 @@ namespace FollowBlockMain
         public List<string> Dfeed = new List<string>();
         public List<string> Cfeed = new List<string>();
         public List<string> Nfeed = new List<string>();
-        public List<string> SBList = new List<string>();
-        public List<string> LBList = new List<string>();
-        public List<string> DBList = new List<string>();
-        public List<string> CBList = new List<string>();
-        public List<string> NBList = new List<string>();
-        public List<string> SFList = new List<string>();
-        public List<string> LFList = new List<string>();
-        public List<string> DFList = new List<string>();
-        public List<string> CFList = new List<string>();
-        public List<string> NFList = new List<string>();
+        public List<Block> SBList = new List<Block>();
+        public List<Block> LBList = new List<Block>();
+        public List<Block> DBList = new List<Block>();
+        public List<Block> CBList = new List<Block>();
+        public List<Block> NBList = new List<Block>();
+        public List<Follow> SFList = new List<Follow>();
+        public List<Follow> LFList = new List<Follow>();
+        public List<Follow> DFList = new List<Follow>();
+        public List<Follow> CFList = new List<Follow>();
+        public List<Follow> NFList = new List<Follow>();
 
 
-        void AddEmail(ProfileLists fileli)
+        public void AddEmail(ProfileLists fileli)
         {
             FolNam.Add(fileli);
         }
 
-        void Profl(Profiles selif)
+        void AddProfl(Profiles selif)
         {
-            Profiles SeanP = new Profiles();
-            SeanP.proname = "Sean";
-            SeanP.prosname = "Estayan";
-            SeanP.following = 1;
-            SeanP.followers = 0;
-            SeanP.blocked = 1;
-            Prol.Add(SeanP);
-
-            Profiles LorreaP = new Profiles();
-            LorreaP.proname = "Lorrea";
-            LorreaP.prosname = "Hugo";
-            LorreaP.following = 1;
-            LorreaP.followers = 0;
-            LorreaP.blocked = 1;
-            Prol.Add(LorreaP);
-
-            Profiles DanicaP = new Profiles();
-            DanicaP.proname = "Danica";
-            DanicaP.prosname = "Cabrera";
-            DanicaP.following = 1;
-            DanicaP.followers = 0;
-            DanicaP.blocked = 1;
-            Prol.Add(DanicaP);
-
-            Profiles ClarisP = new Profiles();
-            ClarisP.proname = "Claris";
-            ClarisP.prosname = "Batacandolo";
-            ClarisP.following = 1;
-            ClarisP.followers = 0;
-            ClarisP.blocked = 1;
-            Prol.Add(ClarisP);
-
+            Prol.Add(selif);
         }
 
-        void AddFollow()
+        void AddFollow(Follow flow)
         {
-            SFList.Add("Kyla");
-            LFList.Add("Kyla");
-            DFList.Add("Kyla");
-            CFList.Add("Kyla");
+            SFList.Add(flow);
+            LFList.Add(flow);
+            DFList.Add(flow);
+            CFList.Add(flow);
+        }
 
-            SBList.Add("Cai");
-            LBList.Add("Cai");
-            DBList.Add("Cai");
-            CBList.Add("Cai");
+        void AddBlock(Block bock)
+        {
+            SBList.Add(bock);
+            LBList.Add(bock);
+            DBList.Add(bock);
+            CBList.Add(bock);
         }
     }
 }
