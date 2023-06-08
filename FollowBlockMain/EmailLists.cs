@@ -10,37 +10,29 @@ namespace FollowBlockMain
     {
         public List<ProfileLists> FolNam = new List<ProfileLists>();
         public List<Profiles> Prol = new List<Profiles>();
+        public List<string> Sfeed = new List<string>();
+        public List<string> Lfeed = new List<string>();
+        public List<string> Dfeed = new List<string>();
+        public List<string> Cfeed = new List<string>();
+        public List<string> Nfeed = new List<string>();
+        public List<string> SBList = new List<string>();
+        public List<string> LBList = new List<string>();
+        public List<string> DBList = new List<string>();
+        public List<string> CBList = new List<string>();
+        public List<string> NBList = new List<string>();
+        public List<string> SFList = new List<string>();
+        public List<string> LFList = new List<string>();
+        public List<string> DFList = new List<string>();
+        public List<string> CFList = new List<string>();
+        public List<string> NFList = new List<string>();
 
 
-        void Emlist()
+        void AddEmail(ProfileLists fileli)
         {
-
-            ProfileLists Sean = new ProfileLists();
-            Sean.email = "Sean@Follow";
-            Sean.pas = "sean123";
-            FolNam.Add(Sean);
-
-            ProfileLists Lorrea = new ProfileLists();
-            Lorrea.email = "Lorrea@Follow";
-            Lorrea.pas = "lorrea123";
-            FolNam.Add(Lorrea);
-
-            ProfileLists Danica = new ProfileLists();
-            Danica.email = "Danica@Follow";
-            Danica.pas = "danica123";
-            FolNam.Add(Danica);
-
-            ProfileLists Claris = new ProfileLists();
-            Claris.email = "Claris@Follow";
-            Claris.pas = "claris123";
-            FolNam.Add(Claris);
-
-            ProfileLists New = new ProfileLists();
-
-
+            FolNam.Add(fileli);
         }
 
-        void Profl()
+        void Profl(Profiles selif)
         {
             Profiles SeanP = new Profiles();
             SeanP.proname = "Sean";
@@ -74,6 +66,19 @@ namespace FollowBlockMain
             ClarisP.blocked = 1;
             Prol.Add(ClarisP);
 
+        }
+
+        void AddFollow()
+        {
+            SFList.Add("Kyla");
+            LFList.Add("Kyla");
+            DFList.Add("Kyla");
+            CFList.Add("Kyla");
+
+            SBList.Add("Cai");
+            LBList.Add("Cai");
+            DBList.Add("Cai");
+            CBList.Add("Cai");
         }
     }
 }
