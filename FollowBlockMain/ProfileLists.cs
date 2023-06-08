@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DummyProfiles
+namespace FollowBlockMain
 {
     public class ProfileLists
     {
@@ -16,7 +16,7 @@ namespace DummyProfiles
     {
         public string posts;
     }
-    
+
     public class Profiles
     {
         public string proname;

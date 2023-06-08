@@ -9,11 +9,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Display\Display.csproj" />
-    <ProjectReference Include="..\DummyProfiles\DummyProfiles.csproj" />
-    <ProjectReference Include="..\FollowAndBlock\FollowAndBlock.csproj" />
-    <ProjectReference Include="..\Suggestion\Suggestion.csproj" />
-  </ItemGroup>
-
 </Project>
