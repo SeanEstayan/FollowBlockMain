@@ -14,7 +14,7 @@ namespace FollowBlockMain
             ProfileLists plist = new ProfileLists();
             LogIn login = new LogIn();
             EmailLists elist = new EmailLists();
-            Profiles seliforp = new Profiles(); 
+            //Profiles seliforp = new Profiles(); 
 
             ProfileLists Sean = new ProfileLists
             {
@@ -64,6 +64,11 @@ namespace FollowBlockMain
                 following = 1,
                 followers = 0,
                 blocked = 1
+            };
+
+            Follow SeanF = new Follow
+            {
+                
             };
 
             elist.AddEmail(Sean);

@@ -37,7 +37,7 @@ namespace FollowBlockMain
             Prol.Add(selif);
         }
 
-        void AddFollow(Follow flow)
+        void AddSFollow(Follow flow)
         {
             SFList.Add(flow);
             LFList.Add(flow);
