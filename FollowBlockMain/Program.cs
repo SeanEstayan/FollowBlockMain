@@ -6,42 +6,78 @@ namespace FollowBlockMain
     class Program
     {
 
-        static List<string> Sfeed = new List<string>();
-        static List<string> Lfeed = new List<string>();
-        static List<string> Dfeed = new List<string>();
-        static List<string> Cfeed = new List<string>();
-        static List<string> Nfeed = new List<string>();
-        static List<string> SBList = new List<string>();
-        static List<string> LBList = new List<string>();
-        static List<string> DBList = new List<string>();
-        static List<string> CBList = new List<string>();
-        static List<string> NBList = new List<string>();
-        static List<string> SFList = new List<string>();
-        static List<string> LFList = new List<string>();
-        static List<string> DFList = new List<string>();
-        static List<string> CFList = new List<string>();
-        static List<string> NFList = new List<string>();
+
         static int i;
         static void Main(string[] args)
         {
-
-            SFList.Add("Kyla");
-            LFList.Add("Kyla");
-            DFList.Add("Kyla");
-            CFList.Add("Kyla");
-
-            SBList.Add("Cai");
-            LBList.Add("Cai");
-            DBList.Add("Cai");
-            CBList.Add("Cai");
-
-            //Profiles NewP = new Profiles();
-
             Fmenu fmenu = new Fmenu();
             ProfileLists plist = new ProfileLists();
             LogIn login = new LogIn();
             EmailLists elist = new EmailLists();
-        
+            //Profiles seliforp = new Profiles(); 
+
+            ProfileLists Sean = new ProfileLists
+            {
+                email = "Sean@Follow",
+                pas = "sean123"
+            };
+            ProfileLists Lorrea = new ProfileLists {
+                email = "Lorrea@Follow",
+                pas = "lorrea123"
+            };
+            ProfileLists Danica = new ProfileLists {
+                email = "Danica@Follow",
+                pas = "danica123"
+            };
+            ProfileLists Claris = new ProfileLists {
+                email = "Claris@Follow",
+                pas = "claris123"
+            }; 
+           
+            Profiles SeanP = new Profiles {
+                proname = "Sean",
+                prosname = "Estayan",
+                following = 1,
+                followers = 0,
+                blocked = 1
+            };
+            Profiles LorreaP = new Profiles
+            {
+                proname = "Lorrea",
+                prosname = "Hugo",
+                following = 1,
+                followers = 0,
+                blocked = 1
+            };
+            Profiles DanicaP = new Profiles
+            {
+                proname = "Danica",
+                prosname = "Cabrera",
+                following = 1,
+                followers = 0,
+                blocked = 1
+            };
+            Profiles ClarisP = new Profiles
+            {
+                proname = "Claris",
+                prosname = "Batacandolo",
+                following = 1,
+                followers = 0,
+                blocked = 1
+            };
+
+            Follow SeanF = new Follow
+            {
+                
+            };
+
+            elist.AddEmail(Sean);
+            elist.AddEmail(Lorrea);
+            elist.AddEmail(Danica);
+            elist.AddEmail(Claris);
+
+
+
             do
             {
                 string input;
@@ -57,15 +93,15 @@ namespace FollowBlockMain
                         Console.Write("Email: ");
                         emil = Console.ReadLine();
  
-                        if (emil.Equals(elist.Sean.email))
+                        if (emil.Equals(Sean.email))
                             {
                             pass = login.Password();
 
-                            if (pass == fol.pas)
+                            if (pass.Equals(Sean.pas))
                             {
                                 do {
 
-                                    fmenu.ShowProfile(elist.Prol.);
+                                    fmenu.ShowProfile(SeanP);
                                     chr = fmenu.Screen();
 
                                     switch (chr)
